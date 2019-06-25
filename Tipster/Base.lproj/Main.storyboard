@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tips-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                             <outletCollection property="gestureRecognizers" destination="9Uh-jE-Gx8" appends="YES" id="cH7-cb-PqB"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="9Hb-79-r9f"/>
+                    <navigationItem key="navigationItem" title="Tips" id="9Hb-79-r9f"/>
                     <connections>
                         <outlet property="billField" destination="dxy-tz-cs6" id="bwA-Yc-5s6"/>
                         <outlet property="percentagesBar" destination="JcY-by-JSd" id="Ata-0A-khB"/>
