@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *billField;
+@property (weak, nonatomic) IBOutlet UILabel *tipField;
+@property (weak, nonatomic) IBOutlet UILabel *totalField;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *percentagesBar;
 
 @end
 
@@ -19,5 +23,55 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)onTap:(id)sender {
+    NSLog(@"Hello");
+    
+    [self.view endEditing:YES];
+}
+
+- (IBAction)onEdit:(id)sender {
+    
+    NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
+    
+    double tipPercentage = [percentages[self.percentagesBar.selectedSegmentIndex] doubleValue];
+
+    double bill = [self.billField.text doubleValue];
+    double tip = tipPercentage * bill;
+    double total = bill + tip;
+    
+    self.tipField.text = [NSString stringWithFormat:@"$%.2f", tip];
+    self.totalField.text = [NSString stringWithFormat:@"$%.2f", total];
+    
+}
+
+- (IBAction)onEditBegin:(id)sender {
+    CGRect newFrame = self.billField.frame;
+    
+    newFrame.origin.y += 30;
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        self.billField.frame = newFrame;
+    }];
+    
+    [UIView animateWithDuration:1 animations:^{
+        self.tipField.alpha = 0;
+    }];
+    
+}
+
+- (IBAction)onEditEnd:(id)sender {
+    
+    CGRect newFrame = self.billField.frame;
+    
+    newFrame.origin.y -= 30;
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        self.billField.frame = newFrame;
+    }];
+    
+    [UIView animateWithDuration:1 animations:^{
+        self.tipField.alpha = 1;
+    }];
+}
 
 @end
