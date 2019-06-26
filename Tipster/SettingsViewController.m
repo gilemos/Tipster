@@ -10,6 +10,7 @@
 
 @interface SettingsViewController ()
 @property (weak, nonatomic) IBOutlet UISlider *rollBar;
+@property (weak, nonatomic) IBOutlet UITextField *tipLabel;
 
 @end
 
@@ -22,6 +23,9 @@
 
 - (IBAction)slider:(id)sender {
     double curValue = self.rollBar.value;
+    
+    
+    self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", curValue];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setDouble:curValue forKey:@"default_tip_percentage"];

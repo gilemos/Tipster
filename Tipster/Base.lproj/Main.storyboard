@@ -137,6 +137,20 @@
                                     <outletCollection property="gestureRecognizers" destination="nib-IC-V6d" appends="YES" id="TNa-Mu-PGz"/>
                                 </connections>
                             </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ATT-t9-h5H">
+                                <rect key="frame" x="159" y="252" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxy-Xo-xe1">
+                                <rect key="frame" x="159" y="252" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wJa-Nk-dZK"/>
@@ -144,6 +158,7 @@
                     <navigationItem key="navigationItem" title="Settings" id="deX-rO-DqO"/>
                     <connections>
                         <outlet property="rollBar" destination="RIG-O7-RlL" id="QEJ-vg-GMw"/>
+                        <outlet property="tipLabel" destination="fxy-Xo-xe1" id="19O-LU-Oes"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPL-Z1-c3q" userLabel="First Responder" sceneMemberID="firstResponder"/>
