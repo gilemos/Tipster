@@ -34,9 +34,11 @@
     NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
     
     double tipPercentage = [percentages[self.percentagesBar.selectedSegmentIndex] doubleValue];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    double newTip = [defaults doubleForKey:@"default_tip_percentage"];
 
     double bill = [self.billField.text doubleValue];
-    double tip = tipPercentage * bill;
+    double tip = newTip * bill;
     double total = bill + tip;
     
     self.tipField.text = [NSString stringWithFormat:@"$%.2f", tip];

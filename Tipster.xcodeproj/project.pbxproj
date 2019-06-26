@@ -15,6 +15,7 @@
 		71F330D322C2C073007D4723 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F330D222C2C073007D4723 /* main.m */; };
 		71F330DD22C2C073007D4723 /* TipsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F330DC22C2C073007D4723 /* TipsterTests.m */; };
 		71F330E822C2C073007D4723 /* TipsterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F330E722C2C073007D4723 /* TipsterUITests.m */; };
+		71F330FA22C2EEF7007D4723 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F330F922C2EEF7007D4723 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		71F330E322C2C073007D4723 /* TipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F330E722C2C073007D4723 /* TipsterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsterUITests.m; sourceTree = "<group>"; };
 		71F330E922C2C073007D4723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71F330F822C2EEF7007D4723 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		71F330F922C2EEF7007D4723 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				71F330C622C2C072007D4723 /* ViewController.h */,
 				71F330C722C2C072007D4723 /* ViewController.m */,
 				71F330C922C2C072007D4723 /* Main.storyboard */,
+				71F330F822C2EEF7007D4723 /* SettingsViewController.h */,
+				71F330F922C2EEF7007D4723 /* SettingsViewController.m */,
 				71F330CC22C2C073007D4723 /* Assets.xcassets */,
 				71F330CE22C2C073007D4723 /* LaunchScreen.storyboard */,
 				71F330D122C2C073007D4723 /* Info.plist */,
@@ -265,6 +270,7 @@
 				71F330C822C2C072007D4723 /* ViewController.m in Sources */,
 				71F330D322C2C073007D4723 /* main.m in Sources */,
 				71F330C522C2C072007D4723 /* AppDelegate.m in Sources */,
+				71F330FA22C2EEF7007D4723 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
