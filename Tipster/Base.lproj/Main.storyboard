@@ -58,8 +58,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="nGo-0b-TmB"/>
                                     <action selector="onEditBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="nsb-XJ-dUE"/>
+                                    <action selector="onEditBillField:" destination="BYZ-38-t0r" eventType="editingChanged" id="Rrt-LE-pJY"/>
                                     <action selector="onEditEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Br7-iP-aLO"/>
                                 </connections>
                             </textField>
@@ -72,7 +72,7 @@
                                     <segment title="22%"/>
                                 </segments>
                                 <connections>
-                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="valueChanged" id="dCS-ot-Kxj"/>
+                                    <action selector="EditChangePercentageBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="7PI-gW-7rg"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Av-Gg-Fk4">
@@ -100,7 +100,7 @@
                     <connections>
                         <outlet property="billField" destination="dxy-tz-cs6" id="bwA-Yc-5s6"/>
                         <outlet property="percentagesBar" destination="JcY-by-JSd" id="Ata-0A-khB"/>
-                        <outlet property="tipField" destination="dsb-mK-yN4" id="bCa-X5-BUV"/>
+                        <outlet property="tipField" destination="dsb-mK-yN4" id="ZLn-l7-O7P"/>
                         <outlet property="totalField" destination="4Av-Gg-Fk4" id="U34-ad-TY0"/>
                     </connections>
                 </viewController>
